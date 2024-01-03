@@ -12,11 +12,14 @@ const App = () => {
     const openCartHandler = () => {
         setCartStatus(true);
     };
+    const closeCartHandler = () => {
+        setCartStatus(false);
+    };
     return (
         <CartProvider>
             <div className='app'>
-                {cartStatus && <Cart openCartHandler={openCartHandler} />}
-                <Header />
+                {cartStatus && <Cart closeCartHandler={closeCartHandler} />}
+                <Header openCartHandler={openCartHandler} />
                 <MedicineProvider>
                     <main className='main'>
                         <AddProduct />

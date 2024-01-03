@@ -7,8 +7,8 @@ const Header = (props) => {
     };
     return (
         <>
-            <header className='header'>
-                <div className='title'>Your Title</div>
+            <header className={classes.header}>
+                <div className={classes.title}>Quraishi's Medical</div>
                 <HeaderButton openCartHandler={openCartHandler} />
             </header>
         </>

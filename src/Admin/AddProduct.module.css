@@ -1,23 +1,49 @@
-.input-field {
-    padding: 1rem;
-    width: 90%;
-    max-width: auto;
-}
-
-.input-field label {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.input-field input {
-    font: inherit;
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
     width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    margin-top: 0.5rem;
 }
 
-.input-field input:focus {
-    outline: none;
-    border-color: #4f005f;
+.form-section form {
+    display: flex;
+    flex-direction: row; /* Change to row to display elements inline */
+    margin-top: 3rem;
+    margin-left: 10rem;
+    gap: 10px;
+    width: 100%; /* Adjust the max-width if needed */
+}
+
+.form-section label {
+    color: rgb(67, 67, 67);
+    font-weight: bold;
+}
+.form-section input[type="text"],
+.form-section input[type="number"] {
+    background-color: rgb(233, 233, 233);
+}
+
+.form-section input[type="text"],
+.form-section input[type="number"],
+.form-section button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-section button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-section button:hover {
+    background-color: #0056b3;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
 }

@@ -13,7 +13,6 @@ export const MedicineProvider = (props) => {
             return [...prevMedicines, data];
         });
     };
-
     const medicineContext = {
         medicines: medicines,
         addMedicine: addMedicineHandler,

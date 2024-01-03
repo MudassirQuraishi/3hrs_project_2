@@ -1,19 +1,41 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import CartContext from "../store/cart-context";
-const Product = ({ name, description, price }) => {
+import classes from "./Product.module.css";
+const Product = ({ id, name, description, price, quantity }) => {
     const cartCtx = useContext(CartContext);
+    const quantityRef = useRef();
     const addToCartHandler = () => {
-        const cartItem = { name: name, price: price };
-        cartCtx.addItem(cartItem);
+        if (quantityRef.current.value > 0 && quantityRef.current.value < 10) {
+            const cartItem = {
+                id: id,
+                name: name,
+                price: price,
+                quantity: parseInt(quantityRef.current.value),
+            };
+            console.log(cartItem);
+            cartCtx.addItem(cartItem);
+            quantityRef.current.value = "";
+        } else {
+            alert("Please Select a quntity between 1 and 10");
+            quantityRef.current.value = "";
+            quantityRef.current.focus();
+        }
     };
 
     return (
-        <li className='product'>
+        <li className={classes.product}>
             <h3>{name}</h3>
             <p>{description}</p>
-            <p>Price: ${price}</p>
-            <label htmlFor='quantity'>Quantity:</label>
-            <input type='number' id='quantity' />
+            <p>Price:${price}</p>
+            <p>Quantity :{quantity}</p>
+            <input
+                type='number'
+                ref={quantityRef}
+                min={1}
+                max={5}
+                id='quantity'
+                placeholder='QTY'
+            />
             <button onClick={addToCartHandler}>Add to Cart</button>
         </li>
     );

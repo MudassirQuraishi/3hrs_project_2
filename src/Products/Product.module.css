@@ -1,46 +1,48 @@
-.meal {
-    margin-left: 1rem;
-}
-.price {
-    font-weight: 600;
-    color: rgb(255, 183, 0);
-}
-.name {
-    font-weight: 800;
-    font-size: 24px;
-}
-.medicine-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.details-container {
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 50%;
+    margin: 15px auto; /* Center the products on the screen */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    list-style: none; /* Remove default list styles */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-.input-field {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.5rem;
-}
-.input-field input {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    border-radius: 0.5rem;
-    border-color: #ccc;
-    height: 1.5rem;
-}
-.input-field button {
-    width: 10rem;
-    height: 2rem;
-    border-radius: 0.5rem;
-    border: none;
-    align-self: center;
-    justify-self: center;
-    background-color: rgba(132, 132, 237, 0.526);
+    align-items: center; /* Center items in each product */
 }
 
-.input-field button:hover {
-    background-color: rgba(4, 4, 237, 0.526);
+.product h3 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product label {
+    margin: 5px 0;
+}
+
+.product input[type="number"],
+.product button {
+    margin: 5px 0;
+    padding: 8px 16px;
+}
+.product input[type="number"] {
+    width: 2rem;
+}
+
+.product button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
 }
