@@ -1,0 +1,46 @@
+.meal {
+    margin-left: 1rem;
+}
+.price {
+    font-weight: 600;
+    color: rgb(255, 183, 0);
+}
+.name {
+    font-weight: 800;
+    font-size: 24px;
+}
+.medicine-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+.input-field input {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.5rem;
+    border-color: #ccc;
+    height: 1.5rem;
+}
+.input-field button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(132, 132, 237, 0.526);
+}
+
+.input-field button:hover {
+    background-color: rgba(4, 4, 237, 0.526);
+}

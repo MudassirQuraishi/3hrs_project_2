@@ -1,0 +1,15 @@
+header {
+    margin: 0;
+    background-color: rgb(130, 201, 248);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title {
+    margin: 0;
+    padding-left: 7rem;
+}
+.title h1 {
+    color: white;
+    font-weight: 800;
+}

@@ -1,0 +1,162 @@
+/* App.css */
+.app {
+    font-family: Arial, sans-serif;
+    /* Other global styles for your app */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    /* Add additional styles for your title */
+}
+
+.cart-details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* Add additional styles for your cart details */
+}
+/* App.css */
+/* ... (other styles) */
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%; /* Ensure the form container takes full width */
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form-section input[type="text"],
+.form-section button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-section button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-section button:hover {
+    background-color: #0056b3;
+} /* App.css */
+/* ... (other styles) */
+
+/* Style for individual product list item */
+/* App.css */
+/* ... (other styles) */
+
+/* Style for individual product list item */
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 50%;
+    margin: 15px auto; /* Center the products on the screen */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    list-style: none; /* Remove default list styles */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Center items in each product */
+}
+
+.product h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product input[type="text"],
+.product button {
+    margin: 5px 0; /* Add spacing between input tags and button */
+}
+
+.product button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+/* App.css */
+/* ... (other styles) */
+
+/* Style for individual product list item */
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 50%;
+    margin: 15px auto; /* Center the products on the screen */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    list-style: none; /* Remove default list styles */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; /* Center items in each product */
+}
+
+.product h3 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product label {
+    margin: 5px 0;
+}
+
+.product input[type="number"],
+.product button {
+    margin: 5px 0;
+    padding: 8px 16px;
+}
+.product input[type="number"] {
+    max-width: 3rem;
+}
+
+.product button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
