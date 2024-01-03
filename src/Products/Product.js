@@ -1,5 +1,11 @@
+import React, { useContext } from "react";
+import CartContext from "../store/cart-context";
 const Product = ({ name, description, price }) => {
-    // State for quantity
+    const cartCtx = useContext(CartContext);
+    const addToCartHandler = () => {
+        const cartItem = { name: name, price: price };
+        cartCtx.addItem(cartItem);
+    };
 
     return (
         <li className='product'>
@@ -8,7 +14,7 @@ const Product = ({ name, description, price }) => {
             <p>Price: ${price}</p>
             <label htmlFor='quantity'>Quantity:</label>
             <input type='number' id='quantity' />
-            <button>Add to Cart</button>
+            <button onClick={addToCartHandler}>Add to Cart</button>
         </li>
     );
 };

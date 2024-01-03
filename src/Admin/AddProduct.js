@@ -1,18 +1,41 @@
+import React, { useContext, useRef } from "react";
+import MedicineContext from "../store/product-context";
 const AddProduct = () => {
+    const nameRef = useRef();
+    const descriptionRef = useRef();
+    const priceRef = useRef();
+    const quantityRef = useRef();
+    const idRef = useRef();
+    const medicineCtx = useContext(MedicineContext);
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
-        // You can access form data using refs or controlled components
+        const medicineDetails = {
+            id: parseInt(idRef.current.value),
+            name: nameRef.current.value,
+            description: descriptionRef.current.value,
+            price: parseInt(priceRef.current.value),
+            quantity: parseInt(quantityRef.current.value),
+        };
+        medicineCtx.addMedicine(medicineDetails);
     };
 
     return (
         <div className='form-section'>
             <form onSubmit={handleSubmit}>
-                <input type='text' placeholder='Input 1' />
-                <input type='text' placeholder='Input 2' />
-                <input type='text' placeholder='Input 3' />
-                <input type='text' placeholder='Input 4' />
-                <button type='submit'>Submit</button>
+                <input type='number' ref={idRef} placeholder='ID' />
+                <input type='text' ref={nameRef} placeholder='Name' />
+                <input
+                    type='text'
+                    ref={descriptionRef}
+                    placeholder='Description'
+                />
+                <input type='number' ref={priceRef} placeholder='Price' />
+                <input
+                    type='Quantity'
+                    ref={quantityRef}
+                    placeholder='Quantity'
+                />
+                <button type='submit'>Add to Inventory</button>
             </form>
         </div>
     );
