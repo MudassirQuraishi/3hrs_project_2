@@ -1,37 +1,32 @@
 .product {
-    border: 1px solid #ccc;
-    padding: 10px;
-    max-width: 50%;
-    margin: 15px auto; /* Center the products on the screen */
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px auto;
     border-radius: 8px;
-    background-color: #f9f9f9;
-    list-style: none; /* Remove default list styles */
+    background-color: #fff;
+    list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center; /* Center items in each product */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .product h3 {
-    margin-top: 3px;
-    margin-bottom: 5px;
+    margin: 5px 0;
+    font-size: 1.5rem;
 }
 
 .product p {
-    margin: 5px 0;
+    margin: 8px 0;
+    color: #555;
 }
 
-.product label {
-    margin: 5px 0;
-}
-
-.product input[type="number"],
-.product button {
-    margin: 5px 0;
-    padding: 8px 16px;
-}
 .product input[type="number"] {
-    width: 2rem;
+    width: 40px;
+    padding: 8px;
+    margin: 5px 0;
 }
 
 .product button {
@@ -39,6 +34,7 @@
     color: #fff;
     border: none;
     border-radius: 4px;
+    padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 }

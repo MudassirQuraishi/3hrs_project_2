@@ -44,23 +44,6 @@ export const CartProvider = (props) => {
             return prevAmount + updatedItem.price;
         });
     };
-    // const decreaseQuantityHandler = (updatedItem) => {
-    //     setCartItems((prevItems) => {
-    //         const updatedItems = prevItems.map((item) => {
-    //             if (item.id === updatedItem.id) {
-    //                 return {
-    //                     ...item,
-    //                     quantity: item.quantity - 1,
-    //                 };
-    //             }
-    //             return item;
-    //         });
-    //         return updatedItems;
-    //     });
-    //     setTotalAmount((prevAmount) => {
-    //         return prevAmount - updatedItem.price;
-    //     });
-    // };
     const decreaseQuantityHandler = (updatedItem) => {
         setCartItems((prevItems) => {
             const updatedItems = prevItems

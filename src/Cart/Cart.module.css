@@ -8,9 +8,10 @@
 
 .cart-item {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
-    padding: 8px 0;
+    padding: 12px 0;
     border-bottom: 1px solid #ccc;
 }
 
@@ -19,15 +20,21 @@
 }
 
 .cart-item li {
-    margin-right: 8px;
-    margin-top: 4px;
+    margin-right: 16px;
 }
 
 .cart-item span {
-    color: #000000;
+    color: #fff;
+    background-color: #007bff;
     font-weight: bold;
-    border: 1px solid #4b4949;
-    padding: 4px;
+    border-radius: 4px;
+    padding: 6px 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.cart-item span:hover {
+    background-color: #0056b3;
 }
 
 .total {
@@ -46,30 +53,30 @@
 .actions button {
     font: inherit;
     cursor: pointer;
-    background-color: transparent;
-    border: 1px solid rgb(0, 200, 255);
-    padding: 0.5rem 2rem;
+    border: 1px solid #00c8ff;
+    padding: 0.5rem 1.5rem;
     border-radius: 25px;
     margin-left: 1rem;
 }
 
 .actions button:hover,
 .actions button:active {
-    background-color: rgb(3, 79, 100);
-    border-color: rgb(0, 200, 255);
+    background-color: #034f64;
+    border-color: #00c8ff;
     color: white;
 }
 
 .actions .button--alt {
-    color: rgb(0, 200, 255);
+    color: #00c8ff;
 }
 
 .actions .button {
-    background-color: rgb(0, 200, 255);
+    background-color: #00c8ff;
     color: white;
 }
 
 .item-details {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }

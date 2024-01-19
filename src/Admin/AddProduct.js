@@ -19,8 +19,12 @@ const AddProduct = () => {
             price: parseInt(priceRef.current.value),
             quantity: parseInt(quantityRef.current.value),
         };
-        console.log(medicineDetails);
         medicineCtx.addMedicine(medicineDetails);
+        nameRef.current.value = "";
+        descriptionRef.current.value = "";
+        priceRef.current.value = "";
+        quantityRef.current.value = "";
+        idRef.current.value = "";
     };
 
     return (
